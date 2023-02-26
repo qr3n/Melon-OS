@@ -9,5 +9,5 @@ apt-get install gcc qemu nasm python3
 
 ### Building
 ```
-python3 make.py
+python3 build.py
 ```
