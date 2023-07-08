@@ -31,7 +31,7 @@ extern "C" [[noreturn]] void kernel_main() {
     unsigned int program[512]; // Buffer for program (testProgram.asm)
 
     // Read 1 sector starting from 9
-    diskManager.read(program, 0x9, 1);
+    diskManager.read(&program[0], 0x9, 1);
     programsManager.execute(program);
 
     while(1);
